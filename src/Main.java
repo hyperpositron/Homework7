@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
-       // task3();
+        task3();
        // task4();
        // task5();
     }
@@ -29,8 +29,24 @@ public class Main {
         System.out.println();
         for (; i >= 1; i--) {
             System.out.print(" "+i);
-
         }
+        System.out.println();
     }
+    public static void task3 () {
+        System.out.println("Задача №3");   //Задача 3
+        int populationPeople = 12_000_000; //В стране Y население равно 12 миллионов человек.
+        int fertilityPeople = 12; //рождаемость человек на 1000
+        int mortalityPeople = 8; //смертность
+        int year = 0;
+        int people = 1000 + fertilityPeople - mortalityPeople;
+        while (year < 10) {
+            people = people + people;
+            year = year + 1;
+            System.out.println("« Год "+year+" , численность населения составляет "+(people+populationPeople)+" человек »");
+        }
 
+
+
+
+    }
 }
