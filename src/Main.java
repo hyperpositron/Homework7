@@ -4,7 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
-        // task5();
+        task5();
     }
 
     public static void task1() {
@@ -62,4 +62,22 @@ public class Main {
             System.out.println(mounth + " Месяц " + sumDeposit + " рублей");
         }
     }
+
+    public static void task5() {
+        System.out.println("Задача №5");   //Задача 5
+        double sumDeposit = 15000d;
+        double percent = 0.07d;
+        int mounth = 1;
+        int criticalSum = 12_000_000;
+
+        while (sumDeposit <= criticalSum) {
+            sumDeposit = sumDeposit * percent + sumDeposit;
+            mounth = mounth + 1;
+            if (mounth % 6 == 0) {
+                System.out.println(mounth + " Месяц " + sumDeposit + " рублей");
+            }
+        }
+
+    }
+
 }
