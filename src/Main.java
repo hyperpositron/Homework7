@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -111,6 +112,18 @@ public class Main {
         }
 
     }
+
     public static void task8() {
         System.out.println("Задача №8");   //Задача 8
+        int cometFlies = 79;/*комета пролетает каждый 79й год*/
+        int yearToDate = 1823;/*начало года*/
+        int presentYear = 2123;/*конец года*/
+
+        while (presentYear > yearToDate) {
+            yearToDate++;
+            if (yearToDate % cometFlies == 0) {
+                System.out.println(yearToDate);
+            }
+        }
+    }
 }
