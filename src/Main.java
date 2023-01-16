@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -80,6 +81,7 @@ public class Main {
         }
 
     }
+
     public static void task6() {
         System.out.println("Задача №6");   //Задача 6
         double sumDeposit = 15000d;
@@ -96,4 +98,19 @@ public class Main {
         }
     }
 
+    public static void task7() {
+        System.out.println("Задача №7");   //Задача 7
+        int friday = 7;
+        int dayPerMounth = 30;
+        int day = 0;
+        while (day <= dayPerMounth) {
+            day = day + 1;
+            if (day % friday == 0) {
+                System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
+            }
+        }
+
+    }
+    public static void task8() {
+        System.out.println("Задача №8");   //Задача 8
 }
