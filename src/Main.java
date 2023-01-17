@@ -40,13 +40,13 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача №3");   //Задача 3
-        double populationPeople = 12_000_000; //В стране Y население равно 12 миллионов человек.
+        int populationPeople = 12_000_000; //В стране Y население равно 12 миллионов человек.
         float birthCount = (float) 17 / 1000;//рождаемость человек на 1000
         float deathCount = (float) 8 / 1000;//смертность
         float deathAndBirth = birthCount - deathCount;
         int year = 0;
         while (year < 10) {
-            populationPeople = (populationPeople + populationPeople * deathAndBirth);
+            populationPeople = (int) (populationPeople + populationPeople * deathAndBirth);
             year = year + 1;
             System.out.println("« Год " + year + " , численность населения составляет " + (populationPeople) + " человек »");
         }
